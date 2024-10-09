@@ -20,7 +20,7 @@ return {
 			dashboard.button("SPACE e", "  > File Explorer", "<CMD>Neotree filesystem reveal left toggle<CR>"),
 			dashboard.button("SPACE ff", "󰱼  > Find Files", "<CMD>Telescope find_files<CR>"),
 			dashboard.button("SPACE ft", "  > Find Text", "<CMD>Telescope live_grep<CR>"),
-			dashboard.button("SPACE gg", " > Lazy Git", "<CMD>LazyGit<CR>"),
+			dashboard.button("SPACE gg", "  > Lazy Git", "<CMD>LazyGit<CR>"),
 			dashboard.button("q", "  > Quit NVIM", "<cmd>qa<CR>"),
 		}
 
