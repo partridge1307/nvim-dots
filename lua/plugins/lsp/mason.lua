@@ -29,7 +29,13 @@ return {
 
 		mason_installer.setup({
 			ensure_installed = {
+				-- linters
 				"stylua",
+				"golangci-lint",
+				-- formatters
+				"gofumpt",
+				"goimports",
+				"golines",
 			},
 		})
 	end,

@@ -17,7 +17,7 @@ key.set("v", "<", "<gv", { desc = "Left Indentation" })
 key.set("v", ">", ">gv", { desc = "Right Indentation" })
 
 key.set("n", "<C-s>", "<CMD>write<CR>", { desc = "Save" })
-key.set({ "n", "v" }, "<ESC>", "<CMD>nohl<CR><ESC>", { desc = "No Highlight" })
+key.set({ "n", "v", "i" }, "<ESC>", "<CMD>nohl<CR><ESC>", { desc = "No Highlight" })
 
 -- left
 key.set({ "n", "t" }, "<C-Left>", "<CMD>wincmd h<CR>", { desc = "Goto Left Window" })

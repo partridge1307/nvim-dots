@@ -12,6 +12,10 @@ return {
 			end,
 		})
 
+		lint.linters_by_ft = {
+			go = { "golangcilint" },
+		}
+
 		-- exclude lint
 		lint.linters_by_ft = {
 			json = {},
