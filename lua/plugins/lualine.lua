@@ -12,19 +12,8 @@ return {
 				theme = "nightfly",
 			},
 			sections = {
-				lualine_x = {
-					{
-						lazy_status.updates,
-						cond = lazy_status.has_updates,
-					},
-					{
-						"encoding",
-					},
-				},
-				lualine_y = {
-					{
-						"progress",
-					},
+				lualine_b = { "branch", "diagnostics" },
+				lualine_c = {
 					{
 						"diff",
 						symbols = {
@@ -42,6 +31,18 @@ return {
 								}
 							end
 						end,
+					},
+				},
+				lualine_x = {
+					{
+						lazy_status.updates,
+						cond = lazy_status.has_updates,
+					},
+					{
+						"filename",
+					},
+					{
+						"encoding",
 					},
 				},
 			},

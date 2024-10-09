@@ -12,6 +12,11 @@ return {
 			end,
 		})
 
+		-- exclude lint
+		lint.linters_by_ft = {
+			json = {},
+		}
+
 		vim.keymap.set("n", "<leader>cl", function()
 			lint.try_lint()
 		end, { desc = "Linting" })

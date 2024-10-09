@@ -6,10 +6,10 @@ return {
 		{
 			"rcarriga/nvim-notify",
 			opts = {
-				timeout = 2000,
+				timeout = 3000,
 				max_width = 60,
 				max_height = 80,
-				stages = "slide",
+				stages = "static",
 				render = "simple",
 			},
 		},
@@ -37,6 +37,7 @@ return {
 							{ find = "; before #%d+" },
 							{ find = "%d+ lines yanked" },
 							{ find = "%d+ fewer lines" },
+							{ find = "%d+ more lines" },
 						},
 					},
 					view = "mini",
@@ -47,7 +48,6 @@ return {
 			},
 			presets = {
 				long_message_to_split = true,
-				lsp_doc_border = true,
 			},
 		})
 	end,

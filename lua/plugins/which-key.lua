@@ -17,6 +17,7 @@ return {
 			{ "<leader>g", group = "Git" },
 			{ "<leader>x", group = "Diagnostics" },
 			{ "<leader>w", group = "Windows" },
+			{ "<leader>wt", group = "Terminals" },
 		})
 
 		wk.add({

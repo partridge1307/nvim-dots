@@ -21,6 +21,7 @@ return {
 			dashboard.button("SPACE ff", "󰱼  > Find Files", "<CMD>Telescope find_files<CR>"),
 			dashboard.button("SPACE ft", "  > Find Text", "<CMD>Telescope live_grep<CR>"),
 			dashboard.button("SPACE gg", "  > Lazy Git", "<CMD>LazyGit<CR>"),
+			dashboard.button("l", "󰒲  > Lazy", "<CMD>Lazy<CR>"),
 			dashboard.button("q", "  > Touch Grass", "<cmd>qa<CR>"),
 		}
 
