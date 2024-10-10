@@ -26,7 +26,7 @@ return {
 		vim.api.nvim_create_autocmd("TermOpen", {
 			pattern = "term://*",
 			callback = function()
-				vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], { buffer = 0 })
+				vim.keymap.set("t", "<S-ESC>", [[<C-\><C-n>]], { buffer = 0 })
 			end,
 		})
 
