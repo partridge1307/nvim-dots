@@ -28,18 +28,25 @@ function Helpers.zoom_image(type, img)
 		new_height = img.image_height / 1.25
 	end
 
-	local win_width = vim.api.nvim_win_get_width(0)
-	local win_height = vim.api.nvim_win_get_height(0)
+	local win_width = vim.api.nvim_win_get_width(0) * 35
+	local win_height = vim.api.nvim_win_get_height(0) * 35
+	local min_size = 240
 
-	-- if new_width > win_width then
-	-- 	new_width = win_width
-	-- 	new_height = new_width * scaling_factor
-	-- end
-	--
-	-- if new_height > win_height then
-	-- 	new_height = win_height
-	-- 	new_width = new_height / scaling_factor
-	-- end
+	if new_width > win_width then
+		new_width = win_width
+		new_height = new_width * scaling_factor
+	elseif new_width < min_size then
+		new_width = min_size
+		new_height = new_width * scaling_factor
+	end
+
+	if new_height > win_height then
+		new_height = win_height
+		new_width = new_height / scaling_factor
+	elseif new_height < min_size then
+		new_height = min_size
+		new_width = new_height / scaling_factor
+	end
 
 	img.image_width = new_width
 	img.image_height = new_height
