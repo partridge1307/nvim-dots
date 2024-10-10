@@ -46,17 +46,6 @@ return {
 				end,
 			})
 
-			vim.api.nvim_create_autocmd("BufEnter", {
-				pattern = { "*.png", "*.jpg", "*.jpeg", "*.gif", "*.webp", "*.avif" },
-				callback = function()
-					if vim.bo.filetype == "image_nvim" then
-						vim.defer_fn(function()
-							vim.cmd("edit! %")
-						end, 1000)
-					end
-				end,
-			})
-
 			vim.defer_fn(function()
 				vim.cmd("edit! %")
 			end, 0)
