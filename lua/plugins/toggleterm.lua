@@ -7,7 +7,6 @@ return {
 
 		toggleterm.setup({
 			direction = "float",
-			persist_size = true,
 			highlights = {
 				FloatBorder = {
 					guifg = "#2f334d",
