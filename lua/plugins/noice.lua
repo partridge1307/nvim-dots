@@ -34,6 +34,9 @@ return {
 						any = {
 							{ find = "; after #%d+" },
 							{ find = "; before #%d+" },
+							{ find = "%d+ lines yanked" },
+							{ find = "%d+ fewer lines" },
+							{ find = "%d+ more lines" },
 						},
 					},
 					view = "mini",
@@ -41,12 +44,8 @@ return {
 				{
 					filter = {
 						event = "msg_show",
-						any = {
-							{ find = "%d+L, %d+B" },
-							{ find = "%d+ lines yanked" },
-							{ find = "%d+ fewer lines" },
-							{ find = "%d+ more lines" },
-						},
+						kind = "",
+						find = "written",
 					},
 					opts = { skip = true },
 				},
