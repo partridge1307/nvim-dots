@@ -32,15 +32,23 @@ return {
 					filter = {
 						event = "msg_show",
 						any = {
-							{ find = "%d+L, %d+B" },
 							{ find = "; after #%d+" },
 							{ find = "; before #%d+" },
+						},
+					},
+					view = "mini",
+				},
+				{
+					filter = {
+						event = "msg_show",
+						any = {
+							{ find = "%d+L, %d+B" },
 							{ find = "%d+ lines yanked" },
 							{ find = "%d+ fewer lines" },
 							{ find = "%d+ more lines" },
 						},
 					},
-					view = "mini",
+					opts = { skip = true },
 				},
 			},
 			cmdline = {

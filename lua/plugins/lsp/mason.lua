@@ -22,7 +22,6 @@ return {
 		mason_lspconfig.setup({
 			ensure_installed = {
 				"lua_ls",
-				"graphql",
 				"gopls",
 			},
 		})
@@ -36,6 +35,7 @@ return {
 				"gofumpt",
 				"goimports",
 				"golines",
+				"clang-format",
 			},
 		})
 	end,

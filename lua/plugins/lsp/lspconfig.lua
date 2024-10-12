@@ -52,6 +52,7 @@ return {
 		lspconfig["lua_ls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
+			filetypes = { "lua" },
 			settings = {
 				Lua = {
 					diagnostics = {
@@ -72,6 +73,7 @@ return {
 		lspconfig["gopls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
+			filetypes = { "go" },
 			settings = {
 				gopls = {
 					gofumpt = true,
@@ -108,6 +110,11 @@ return {
 					semanticTokens = true,
 				},
 			},
+		})
+
+		lspconfig["protols"].setup({
+			capabilities = capabilities,
+			filetypes = { "proto" },
 		})
 	end,
 }
